@@ -3,37 +3,42 @@ import GitHub from "./icons/GitHub.astro"
 import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import LinkButton from "./LinkButton.astro"
+import Html from "./icons/html.astro"
+import Css from "./icons/Css.astro"
 
 const TAGS = {
   NEXT: {
-    name: "Next.js",
+    name: "Shopify",
     class: "bg-black text-white",
     icon: NextJS,
   },
   TAILWIND: {
-    name: "Tailwind CSS",
-    class: "bg-[#003159] text-white",
+    name: "Javascript",
+    class: "bg-black text-white",
     icon: Tailwind,
+  },
+  Html: {
+    name: "Html",
+    class: "bg-black text-white",
+    icon: Html,
+  },
+  Css: {
+    name: "Css",
+    class: "bg-black text-white",
+    icon: Css,
   },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Tienda Shopify - Importanos.co",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
+      "Desarrollé una atractiva tienda Shopify, manejando desde el diseño hasta la implementación funcional, incluyendo la configuración de inventario y pasarelas de pago. Utilicé tecnologías como HTML, CSS, JavaScript y JSON para personalizar la experiencia de usuario y asegurar un dominio y suscripción efectivos.",
+    link: "https://importanos.co/",
+    github: "https://github.com/miguel-ardila/Tienda-shopify-importanos.co/", 
     image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.Html,TAGS.Css],
   },
-  {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
-    description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
-  },
+  
 ]
 ---
 
